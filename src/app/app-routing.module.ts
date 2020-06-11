@@ -5,7 +5,7 @@ import { IndComponent } from './ind/ind.component';
 
 const routes: Routes = [
   { path : '', component: HomeComponent },
-  { path : '.ind', component: IndComponent }
+  { path : 'ind', component: IndComponent }
 ];
 
 @NgModule({

@@ -1,1 +1,29 @@
-<p>ind works!</p>
+<div *ngFor="let ob of jsonRespStates">
+    <div>
+        <mat-card style="padding-top: 10px;margin-top: 15px;">
+            <mat-card-header>
+              <mat-card-title>{{ob.state}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div>
+                    <span>TotalConfirmed:&nbsp;</span>
+                    <span>{{ob.confirmed}}</span>
+                </div>
+                <div>
+                    <span>Active:&nbsp;</span>
+                    <span>{{ob.active}}</span>
+                </div>
+                <div>
+                    <span>Deaths:&nbsp;</span>
+                    <span>{{ob.deaths}}</span>
+                </div>
+                <div>
+                    <span>Recovered:&nbsp;</span>
+                    <span>{{ob.recovered}}</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<app-charts></app-charts>

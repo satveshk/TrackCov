@@ -9,11 +9,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { IndComponent } from './ind/ind.component';
+import { ChartsComponent } from './charts/charts.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    IndComponent
+    IndComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
